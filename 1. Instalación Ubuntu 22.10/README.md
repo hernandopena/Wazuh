@@ -20,7 +20,7 @@ Si estamos en una maquina virtual, debemos de agregar la unidad virtual y ordena
 
 A continuación, procedemos a iniciar la maquina y nos presentara el menú de boot, similar a la siguiente imagen:
 
-IMG_BOOT
+![Menu Boot](https://github.com/hernandopena/Wazuh/blob/36d9c5a7015c57c9523cccf9264cfd82ce6972f8/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/boot.jpg)
 
 Después de iniciar un proceso de verificación y presentar muchas líneas, nos presentara la siguiente pantalla, en donde nos solicitara la elección del idioma, en el cual seleccionaremos el idioma que más se ajuste a nuestras necesidades y gustos.
 
