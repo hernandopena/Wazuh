@@ -5,7 +5,7 @@ La presente guía, busca presentar de manera rápida y ligera la instalación de
 
 Requisitos:
 
-- Contar con una imagen del sistema operativo Linux Ubuntu 22.10 que a la fecha es la más actualizada y descargada desde su sitio web oficial:  <a href="https://ubuntu.com" target="_blank">Ubuntu</a>.
+- Contar con una imagen del sistema operativo Linux Ubuntu 22.10 que a la fecha es la más actualizada y descargada desde su sitio web oficial: [Ubuntu](https://ubuntu.com){:target="_blank"}.
 - Contar con los recursos hardware que pueden ser físicos o virtuales mínimos sugeridos, como son:
   - Memoria RAM: 4 GB.
   - Almacenamiento: 40 GB para este laboratorio (en entornos de producción se debe tener presente la cantidad de informacion a procesar).
