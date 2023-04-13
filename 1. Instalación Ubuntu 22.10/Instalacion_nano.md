@@ -1,18 +1,19 @@
-# Instalacion del editor de consola VIM
-A continuacion, vamos a presentar de manera breve, como instalar el editor de consola Nano en el sistema operativo Ubuntu
+# instalación del editor de consola nano
+A continuación, vamos a presentar de manera breve, como instalar el editor de consola Nano en el sistema operativo Ubuntu
 
-## Actualizacion de los repositorios de red
+## Actualización de los catalogos de software
 
-Antes de iniciar la instalacion de este y de cualquier otro paquete, es recomendable ejecutar el comando ```sudo apt update``` para que se actulicen los repositorios y los catalogos de aplicaciones disponibles para nuestro sistema
+Antes de iniciar la instalación de este y de cualquier otro paquete, es recomendable ejecutar el comando ```sudo apt update``` para que se actualicen los repositorios y los catálogos de aplicaciones disponibles para nuestro sistema
 
-IMG_APT_UPDATE
+![Actualización de catálogos de software](https://github.com/hernandopena/Wazuh/blob/c8c6d2eaca4a4b4daac4db5d6fb7daab3ac70ce9/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/apt_update.jpg)
+
+
+## Instalación del editor nano
 
 Una vez ejecutado este comando, podremos instalar el editor nano, con el siguiente comando:
 
 ```sudo apt install nano```
 
-IMG_APT_INSTALL_NANO
-
-![listado archivos de configuración de red](https://github.com/hernandopena/Wazuh/blob/8426080e775bb4f0b0c31403d0a7da1b2abd5300/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/ruta_configuracion_red.jpg)
+![Instalación editor nano](https://github.com/hernandopena/Wazuh/blob/c8c6d2eaca4a4b4daac4db5d6fb7daab3ac70ce9/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/apt_install_nano.jpg)
 
 En este momento ya hemos instalado el editor nano en nuestro sistema, y cada vez que necesitemos editar un archivo, basta con ejecutar el comando ```sudo nano archivo_a_editar```
