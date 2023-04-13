@@ -1,4 +1,4 @@
-# 1.1. Configuracion de Red
+# 1.1. Configuracion de Red 
 A continuacion, vamos a presentar de manera breve, como asignar una direccion IP estatica en el sistema operativo Ubuntu
 
 ## Consulta de informacion de interfaces de red
