@@ -1,4 +1,4 @@
-# instalación del editor de consola nano
+# Instalación del editor de consola nano
 A continuación, vamos a presentar de manera breve, como instalar el editor de consola Nano en el sistema operativo Ubuntu
 
 ## Actualización de los catalogos de software
