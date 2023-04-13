@@ -17,4 +17,15 @@ El cual nos ubicara en dicho directorio, y podremos listar los archivos que exis
 
 ![listado archivos de configuración de red](https://github.com/hernandopena/Wazuh/blob/8426080e775bb4f0b0c31403d0a7da1b2abd5300/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/ruta_configuracion_red.jpg)
 
+Podemor ver que existe un archivo llamado **00-installer-config.yaml**, del cual vamos a crear una copia de seguridad, con el comando ```sudo cp 00-installer-config.yaml 00-installer-config.yaml_bak```
+
+IMG_BACKUP_ARCHIVO_RED
+
+Ahora con la ayuda del editor **nano** vamos a editar el archivo de configuracion de la interfaz de red para la parametrizacion de la siguiente manera: ```sudo nano 00-installer-config.yaml```
+
+
+
+
+![listado archivos de configuración de red](https://github.com/hernandopena/Wazuh/blob/8426080e775bb4f0b0c31403d0a7da1b2abd5300/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/ruta_configuracion_red.jpg)
+
 En este momento ya hemos terminado el proceso de instalacion del sistema operativo Ubuntu.
