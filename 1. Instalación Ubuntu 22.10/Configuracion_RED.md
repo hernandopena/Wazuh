@@ -1,4 +1,4 @@
-# 1.1. Configuracion de Red 
+# 1.1. Configuracion de Red
 A continuacion, vamos a presentar de manera breve, como asignar una direccion IP estatica en el sistema operativo Ubuntu
 
 ## Consulta de informacion de interfaces de red
@@ -21,9 +21,32 @@ Podemor ver que existe un archivo llamado **00-installer-config.yaml**, del cual
 
 IMG_BACKUP_ARCHIVO_RED
 
-Ahora con la ayuda del editor **nano** vamos a editar el archivo de configuracion de la interfaz de red para la parametrizacion de la siguiente manera: ```sudo nano 00-installer-config.yaml```
+Ahora con la ayuda del editor **nano** vamos a editar el archivo de configuracion de la interfaz de red para la parametrizacion de la siguiente manera: ```sudo nano 00-installer-config.yaml``` y remplazamos el contenido por el siguiente fragmento de insttrucciones:
 
+```network:
+  ethernets:
+    # interface name
+    enp0s17:
+      dhcp4: false
+      addresses: [192.168.1.100/24]
+      routes:
+        - to: default
+          via: 192.168.1.254
+          metric: 100
+      nameservers:
+        addresses: [200.13.249.101,190.248.0.8]
+        # DNS search base
+        search: [localdomain]
+      dhcp6: false
+  version: 2```
 
+quedando el archivo de configuracion como se presenta en la siguiente imagen
+
+IMG_EDIT_CONF_RED
+
+Guardamos los cambios y salimos del editor, y aplicamos los cambios realizados con el comando ```sudo netplan apply``` verificando que a nueva configuracion se vea reflejada con el comando ```sudo ip addr```, como se muestra a continuacion
+
+IMG_VERIFICACION_NETPLAN
 
 
 ![listado archivos de configuración de red](https://github.com/hernandopena/Wazuh/blob/8426080e775bb4f0b0c31403d0a7da1b2abd5300/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/ruta_configuracion_red.jpg)
