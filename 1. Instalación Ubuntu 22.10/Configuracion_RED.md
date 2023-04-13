@@ -42,14 +42,13 @@ Ahora con la ayuda del editor **nano** vamos a editar el archivo de configuracio
 
 quedando el archivo de configuracion como se presenta en la siguiente imagen
 
-IMG_EDIT_CONF_RED
-![Backup archivo de configuración de red](https://github.com/hernandopena/Wazuh/blob/ecbbc2a40ca300232e9099d6a0abfb5daea4e070/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/backup_archivo_red.jpg)
+![Edicion archivo de configuración de red](https://github.com/hernandopena/Wazuh/blob/678452528edf6100fa4b535af85fd5b067acf630/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/edit_conf_red.jpg)
 
 Guardamos los cambios y salimos del editor, y aplicamos los cambios realizados con el comando ```sudo netplan apply``` verificando que a nueva configuracion se vea reflejada con el comando ```sudo ip addr```, como se muestra a continuacion
 
 IMG_VERIFICACION_NETPLAN
 
 
-![listado archivos de configuración de red](https://github.com/hernandopena/Wazuh/blob/8426080e775bb4f0b0c31403d0a7da1b2abd5300/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/ruta_configuracion_red.jpg)
+![Verificación de la nueva configuración de red](https://github.com/hernandopena/Wazuh/blob/678452528edf6100fa4b535af85fd5b067acf630/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/verificacion_netplan.jpg)
 
 En este momento ya hemos terminado el proceso de instalacion del sistema operativo Ubuntu.
