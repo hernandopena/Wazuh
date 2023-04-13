@@ -13,7 +13,7 @@ Una vez ejecutado, nos presentara las interfaces de red disponibles, y para este
 
 ```cd /etc/netplan/```
 
-El cual nos ubicara en dicho directorio, y podremos listar los archivos que existen a traves del comando **ls**, como se muestra en la siguiente imagen
+El cual nos ubicara en dicho directorio, y podremos listar los archivos que existen a traves del comando ```**ls**```, como se muestra en la siguiente imagen
 
 ![listado archivos de configuración de red](https://github.com/hernandopena/Wazuh/blob/8426080e775bb4f0b0c31403d0a7da1b2abd5300/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/ruta_configuracion_red.jpg)
 
