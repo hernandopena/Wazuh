@@ -23,7 +23,8 @@ Podemor ver que existe un archivo llamado **00-installer-config.yaml**, del cual
 
 Ahora con la ayuda del editor **nano** vamos a editar el archivo de configuracion de la interfaz de red para la parametrizacion de la siguiente manera: ```sudo nano 00-installer-config.yaml``` y remplazamos el contenido por el siguiente fragmento de insttrucciones:
 
-```network:
+```
+  network:
   ethernets:
     # interface name
     enp0s17:
@@ -39,6 +40,7 @@ Ahora con la ayuda del editor **nano** vamos a editar el archivo de configuracio
         search: [localdomain]
       dhcp6: false
   version: 2
+```
 
 quedando el archivo de configuracion como se presenta en la siguiente imagen
 
