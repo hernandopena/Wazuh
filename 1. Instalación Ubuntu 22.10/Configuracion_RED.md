@@ -19,7 +19,7 @@ El cual nos ubicara en dicho directorio, y podremos listar los archivos que exis
 
 Podemor ver que existe un archivo llamado **00-installer-config.yaml**, del cual vamos a crear una copia de seguridad, con el comando ```sudo cp 00-installer-config.yaml 00-installer-config.yaml_bak```
 
-IMG_BACKUP_ARCHIVO_RED
+![Backup archivo de configuración de red](https://github.com/hernandopena/Wazuh/blob/ecbbc2a40ca300232e9099d6a0abfb5daea4e070/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/backup_archivo_red.jpg)
 
 Ahora con la ayuda del editor **nano** vamos a editar el archivo de configuracion de la interfaz de red para la parametrizacion de la siguiente manera: ```sudo nano 00-installer-config.yaml``` y remplazamos el contenido por el siguiente fragmento de insttrucciones:
 
@@ -43,6 +43,7 @@ Ahora con la ayuda del editor **nano** vamos a editar el archivo de configuracio
 quedando el archivo de configuracion como se presenta en la siguiente imagen
 
 IMG_EDIT_CONF_RED
+![Backup archivo de configuración de red](https://github.com/hernandopena/Wazuh/blob/ecbbc2a40ca300232e9099d6a0abfb5daea4e070/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/backup_archivo_red.jpg)
 
 Guardamos los cambios y salimos del editor, y aplicamos los cambios realizados con el comando ```sudo netplan apply``` verificando que a nueva configuracion se vea reflejada con el comando ```sudo ip addr```, como se muestra a continuacion
 
