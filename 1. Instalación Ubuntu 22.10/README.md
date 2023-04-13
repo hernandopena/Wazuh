@@ -89,3 +89,5 @@ Finalmente, nos presentara en la consola la instrucción para ingresar, en donde
 Una vez ingresemos, nos presentara un resumen del sistema, y podremos ver la dirección ip que le fue asignada en la red.
 
 ![información del sistema](https://github.com/hernandopena/Wazuh/blob/eb19b35a41dd1495ea806810085e108da6b445e0/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/informacion_sistema.jpg)
+
+En este momento ya hemos terminado el proceso de instalacion del sistema operativo Ubuntu.
