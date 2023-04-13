@@ -38,7 +38,7 @@ Ahora con la ayuda del editor **nano** vamos a editar el archivo de configuracio
         # DNS search base
         search: [localdomain]
       dhcp6: false
-  version: 2```
+  version: 2
 
 quedando el archivo de configuracion como se presenta en la siguiente imagen
 
