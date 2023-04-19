@@ -14,6 +14,7 @@ A continuación, presentamos los requerimientos necesarios para la instalacion d
 - Navegador web (Firefox, chrome o edge)
 - Cliente SSH [Putty]
 - Memoria RAM, CPU y Almacenamiento, de acuerdo a la cantidad de agentes(endpoint) a instalar
+
 | Agentes | CPU | RAM | Almacenamiento (90 dias) |
 |-----------|-----------|-----------|-----------|
 | 1-25 | 4 vCPU | 8 GiB | 50 GB |
