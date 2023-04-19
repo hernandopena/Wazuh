@@ -23,5 +23,16 @@ A continuación, presentamos los requerimientos necesarios para la instalacion d
 
 
 ## Proceso de instalación
-Abrir una consola de conexion SSH haciendo uso del programa putty
-- Sistema Operativo Linux: 
+Abrir una consola de conexion SSH haciendo uso del programa putty, y establecer conexion con la maquina virtual creada para alojar el servidor de wazuh, a traves de la conexion: admon@192.168.1.100 y la contraseña asignada en el proceso de instalacion.
+
+IMG_CONEXION_PUTTY
+
+
+En la linea de comandos vamos a ejecutar el siguiente comando que realizara la descarga del instalador llamado **wazuh-install.sh**
+
+```curl -sO https://packages.wazuh.com/4.4/wazuh-install.sh```
+
+Una vez se haya descargado el instalador, vamos a ejecutarlo con la siguiente instruccion, en donde **wazuh-1** sera el nombre del nodo principal:
+
+```bash wazuh-install.sh --wazuh-server wazuh-1```
+
