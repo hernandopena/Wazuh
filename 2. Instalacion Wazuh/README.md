@@ -12,7 +12,7 @@ A continuación, presentamos los requerimientos necesarios para la instalacion d
   - Red Hat Enterprise Linux 7, 8, 9
   - Ubuntu 16.04, 18.04, 20.04, 22.04
 - Navegador web (Firefox, chrome o edge)
-- Cliente SSH [Putty](https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe)
+- Cliente SSH [Putty]
 - Memoria RAM, CPU y Almacenamiento, de acuerdo a la cantidad de agentes(endpoint) a instalar
 | Agentes | CPU | RAM | Almacenamiento (90 dias) |
 |-----------|-----------|-----------|-----------|
