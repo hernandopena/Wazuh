@@ -28,11 +28,10 @@ Abrir una consola de conexion SSH haciendo uso del programa putty, y establecer 
 IMG_CONEXION_PUTTY
 
 
-En la linea de comandos vamos a ejecutar el siguiente comando que realizara la descarga del instalador llamado **wazuh-install.sh**
+En la linea de comandos vamos a ejecutar el siguiente comando que realizara la descarga del instalador:
 
-```curl -sO https://packages.wazuh.com/4.4/wazuh-install.sh```
+```sudo curl -sO https://packages.wazuh.com/4.4/wazuh-install.sh && sudo bash ./wazuh-install.sh -a -i```
 
-Una vez se haya descargado el instalador, vamos a ejecutarlo con la siguiente instruccion, en donde **wazuh-1** sera el nombre del nodo principal:
+El comando anterior se encargara de iniciar la instalacion de los componentes necesarios para el funcionamiento de wazuh, y al finalizar la instalacion, presentara el nombre de usuario y contraseña para la administracion de la plataforma.
 
-```bash wazuh-install.sh --wazuh-server wazuh-1```
-
+IMG_INSTALACION:WAZUH
