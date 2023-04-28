@@ -7,7 +7,7 @@ Antes de iniciar nuestro proceso de asignación de una dirección IP estática a
 
 ```sudo ip addr```
 
-![Información de las interfaces de red](https://github.com/hernandopena/Wazuh/blob/8426080e775bb4f0b0c31403d0a7da1b2abd5300/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/informacion_interfaces.jpg)
+![Información de las interfaces de red](https://github.com/hernandopena/Wazuh/blob/3ec8094755ce619d9f574ea5abd49d3d29b8dbcf/1.%20Instalaci%C3%B3n%20Ubuntu%2022.04/imagenes/informacion_interfaces.jpg)
 
 Una vez ejecutado, nos presentara las interfaces de red disponibles, y para este caso, podemos observar que cuenta con una interfaz loopback, y una interfaz de red denominada: **enp0s17** la cual es la que se conectara a la red local, ahora, con la ayuda de la consola del sistema, vamos a navegar hasta el directorio donde se encuentra los archivos de configuración de la red, en este caso ```/etc/netplan/```, con el uso del siguiente comando
 
@@ -15,11 +15,11 @@ Una vez ejecutado, nos presentara las interfaces de red disponibles, y para este
 
 El cual nos ubicará en dicho directorio, y podremos listar los archivos que existen a traves del comando ```ls```, como se muestra en la siguiente imagen
 
-![Listado archivos de configuración de red](https://github.com/hernandopena/Wazuh/blob/8426080e775bb4f0b0c31403d0a7da1b2abd5300/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/ruta_configuracion_red.jpg)
+![Listado archivos de configuración de red](https://github.com/hernandopena/Wazuh/blob/3ec8094755ce619d9f574ea5abd49d3d29b8dbcf/1.%20Instalaci%C3%B3n%20Ubuntu%2022.04/imagenes/ruta_configuracion_red.jpg)
 
 Podemos ver que existe un archivo llamado **00-installer-config.yaml**, del cual vamos a crear una copia de seguridad, con el comando ```sudo cp 00-installer-config.yaml 00-installer-config.yaml_bak```
 
-![Backup archivo de configuración de red](https://github.com/hernandopena/Wazuh/blob/ecbbc2a40ca300232e9099d6a0abfb5daea4e070/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/backup_archivo_red.jpg)
+![Backup archivo de configuración de red](https://github.com/hernandopena/Wazuh/blob/3ec8094755ce619d9f574ea5abd49d3d29b8dbcf/1.%20Instalaci%C3%B3n%20Ubuntu%2022.04/imagenes/backup_archivo_red.jpg)
 
 
 ## Modificación de la configuración de red
@@ -47,10 +47,10 @@ version: 2
 
 quedando el archivo de configuración como se presenta en la siguiente imagen
 
-![Edición archivo de configuración de red](https://github.com/hernandopena/Wazuh/blob/678452528edf6100fa4b535af85fd5b067acf630/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/edit_conf_red.jpg)
+![Edición archivo de configuración de red](https://github.com/hernandopena/Wazuh/blob/3ec8094755ce619d9f574ea5abd49d3d29b8dbcf/1.%20Instalaci%C3%B3n%20Ubuntu%2022.04/imagenes/edit_conf_red.jpg)
 
 Guardamos los cambios y salimos del editor, y aplicamos los cambios realizados con el comando ```sudo netplan apply``` verificando que a nueva configuración se vea reflejada con el comando ```sudo ip addr```, como se muestra a continuación
 
-![Verificación de la nueva configuración de red](https://github.com/hernandopena/Wazuh/blob/678452528edf6100fa4b535af85fd5b067acf630/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/verificacion_netplan.jpg)
+![Verificación de la nueva configuración de red](https://github.com/hernandopena/Wazuh/blob/3ec8094755ce619d9f574ea5abd49d3d29b8dbcf/1.%20Instalaci%C3%B3n%20Ubuntu%2022.04/imagenes/verificacion_netplan.jpg)
 
 En este momento ya hemos realizado la configuración de la ip estática en nuestro servidor linux con sistema operativo Ubuntu.

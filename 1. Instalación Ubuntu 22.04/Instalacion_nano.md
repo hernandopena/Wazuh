@@ -5,7 +5,7 @@ A continuación, vamos a presentar de manera breve, como instalar el editor de c
 
 Antes de iniciar la instalación de este y de cualquier otro paquete, es recomendable ejecutar el comando ```sudo apt update``` para que se actualicen los repositorios y los catálogos de aplicaciones disponibles para nuestro sistema
 
-![Actualización de catálogos de software](https://github.com/hernandopena/Wazuh/blob/c8c6d2eaca4a4b4daac4db5d6fb7daab3ac70ce9/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/apt_update.jpg)
+![Actualización de catálogos de software](https://github.com/hernandopena/Wazuh/blob/3ec8094755ce619d9f574ea5abd49d3d29b8dbcf/1.%20Instalaci%C3%B3n%20Ubuntu%2022.04/imagenes/apt_update.jpg)
 
 
 ## Instalación del editor nano
@@ -14,6 +14,6 @@ Una vez ejecutado este comando, podremos instalar el editor nano, con el siguien
 
 ```sudo apt install nano```
 
-![Instalación editor nano](https://github.com/hernandopena/Wazuh/blob/c8c6d2eaca4a4b4daac4db5d6fb7daab3ac70ce9/1.%20Instalaci%C3%B3n%20Ubuntu%2022.10/imagenes/apt_install_nano.jpg)
+![Instalación editor nano](https://github.com/hernandopena/Wazuh/blob/3ec8094755ce619d9f574ea5abd49d3d29b8dbcf/1.%20Instalaci%C3%B3n%20Ubuntu%2022.04/imagenes/apt_install_nano.jpg)
 
 En este momento ya hemos instalado el editor nano en nuestro sistema, y cada vez que necesitemos editar un archivo, basta con ejecutar el comando ```sudo nano archivo_a_editar```
