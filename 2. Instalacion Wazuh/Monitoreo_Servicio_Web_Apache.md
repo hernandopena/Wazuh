@@ -2,13 +2,41 @@
 
 ## Apache Web Server
 
-Para monitorear servicios web en plataformas como **Apache**, basta con realizar la instalacion del agente de wazuh en dicho sistema (![Ver...](https://github.com/hernandopena/Wazuh/blob/a1f9b4870ffc4d6ff81a4ab6dcd14e9dd4281ece/2.%20Instalacion%20Wazuh/Registro_Agente_Linux.md)).
+Para monitorear servicios web en plataformas como **Apache**, basta con realizar la instalacion del agente de wazuh en dicho sistema [Ver...](https://github.com/hernandopena/Wazuh/blob/a1f9b4870ffc4d6ff81a4ab6dcd14e9dd4281ece/2.%20Instalacion%20Wazuh/Registro_Agente_Linux.md)
 
-y Realziar los ajustes en su configuracion, para que realice la ingesta de los Logs generados por el servicio, esto nos permitira identificar peticiones no deseadas, inyecciones y ataques comunes en aplicaciones web.
+y Realizar los ajustes en su configuracion, para que realice la ingesta de los Logs generados por el servicio, esto nos permitira identificar peticiones no deseadas, inyecciones y ataques comunes en aplicaciones web.
 
 ## Verificiacion de los logs ingestados por el agente 
 
+Para verificar cuales son los origentes de logs que estan siendo entregados por cada uno de los agentes de wazuh, podemos consultarlo desde la consola de aenres, haciendo click sobre el agente que vamos a veriricar.
 
+Agente_ver_logs_1
+
+Al hacer click sobre el agente, nos desplegara la informacion recolectada y que es procesada de acuerdo a los modulos cargaso o componentes configurados; en esta ventana, vamos a hacer click en la opcion **Configuracion** que se encuentra en la esquina superior derecha.
+
+Agente_ver_logs_2
+
+Ahora nos presentara todas las opciones para realizar configuracion del agente, y nos vamos a dirigir al grupo titulado: **Log data analysis** y entre sus opciones vamos a seleccionar: **Log Collection**.
+
+Agente_ver_logs_3
+
+Este modulo, nos permite consultar todas las fuentes de datos provenientes del agente y la ruta desde donde se consultan.
+
+Agente_ver_logs_4
+
+Y podremos consultar los logs del servidor web para los correspondientes analisis.
+
+Agente_ver_logs_5
+
+## Como bloquear trafico entrante
+
+
+
+
+
+ 
+
+------------------------------------------------
 
 
 ,  Para agregar un agente (Dispositivo, servidor, máquina virtual), se debe de dirigir al menú **Agentes**
