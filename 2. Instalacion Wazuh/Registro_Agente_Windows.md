@@ -32,9 +32,9 @@ En el siguiente paso 5, debemos de informar el nombre del agente y podremos clas
 
 A continuación, nos presentara un comando que debemos de copiar y ejecutar en una consola de comandos PowerShell de nuestro agente a registrar con privilegios de administrador, mediante un usuario con privilegios, el ejemplo del comando es:
 
-```
+````
 Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.4.1-1.msi -OutFile ${env:tmp}\wazuh-agent.msi; msiexec.exe /i ${env:tmp}\wazuh-agent.msi /q WAZUH_MANAGER='192.168.1.100' WAZUH_REGISTRATION_SERVER='192.168.1.100' WAZUH_AGENT_GROUP='Windows' WAZUH_AGENT_NAME='ESTACION-01'
-```
+````
 
 ![Comando para instalacion](https://github.com/hernandopena/Wazuh/blob/974cd436841b3a41840e771cb3a3393a4289ad4e/2.%20Instalacion%20Wazuh/imagenes/Nuevo_agente_win_6.jpg)
 
