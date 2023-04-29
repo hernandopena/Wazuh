@@ -6,7 +6,7 @@ Para monitorear servicios web en plataformas como **Apache**, basta con realizar
 
 y Realziar los ajustes en su configuracion, para que realice la ingesta de los Logs generados por el servicio, esto nos permitira identificar peticiones no deseadas, inyecciones y ataques comunes en aplicaciones web.
 
-## Verificiacion de los logs ingestados por el agente
+## Verificiacion de los logs ingestados por el agente 
 
 
 
