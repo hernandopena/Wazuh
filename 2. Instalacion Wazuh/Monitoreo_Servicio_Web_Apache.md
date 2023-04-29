@@ -48,11 +48,11 @@ En el servidor de wazuh realizar la configuración en el archivo **/var/ossec/et
 
 En donde:
 ```
-- **<active-response>**: Instrucción para la ejecución de actividades a partir de una condición.
-- **<command>firewall-drop</command>**: Instrucción para indicar que borre la peticion realizada por un usuario.
-- **<location>local</location>**: Realiza la gestión en un agente (endpoint)
-- **<rules_id>31106</rules_id>**: Indica sobre cuales acciones se aplicará estas acciones.
-- **<timeout>1800</timeout>**: Tiempo en pausa, el cual puede ser usado para el desarrollo de alguna acción.
+- <active-response>: Instrucción para la ejecución de actividades a partir de una condición.
+- <command>firewall-drop</command>: Instrucción para indicar que borre la peticion realizada por un usuario.
+- <location>local</location>: Realiza la gestión en un agente (endpoint)
+- <rules_id>31106</rules_id>: Indica sobre cuales acciones se aplicará estas acciones.
+- <timeout>1800</timeout>: Tiempo en pausa, el cual puede ser usado para el desarrollo de alguna acción.
 ```
 
 A continuación, podemos reiniciar el servidor de wazuh, con los comandos:
