@@ -47,11 +47,13 @@ En el servidor de wazuh realizar la configuración en el archivo **/var/ossec/et
 ![Edición del bloqueo](https://github.com/hernandopena/Wazuh/blob/9386700cb5dbb13b6cc94b23c71062792790bf02/2.%20Instalacion%20Wazuh/imagenes/Agente_bloqueo_logs_1.jpg)
 
 En donde:
+```
 - **<active-response>**: Instrucción para la ejecución de actividades a partir de una condición.
 - **<command>firewall-drop</command>**: Instrucción para indicar que borre la peticion realizada por un usuario.
 - **<location>local</location>**: Realiza la gestión en un agente (endpoint)
 - **<rules_id>31106</rules_id>**: Indica sobre cuales acciones se aplicará estas acciones.
 - **<timeout>1800</timeout>**: Tiempo en pausa, el cual puede ser usado para el desarrollo de alguna acción.
+```
 
 A continuación, podemos reiniciar el servidor de wazuh, con los comandos:
 
