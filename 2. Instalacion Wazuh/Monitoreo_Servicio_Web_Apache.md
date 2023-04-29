@@ -6,6 +6,7 @@ Para monitorear servicios web en plataformas como **Apache**, basta con realizar
 
 y Realizar los ajustes en su configuracion, para que realice la ingesta de los Logs generados por el servicio, esto nos permitira identificar peticiones no deseadas, inyecciones y ataques comunes en aplicaciones web.
 
+
 ## Verificiacion de los logs ingestados por el agente 
 
 Para verificar cuales son los origentes de logs que estan siendo entregados por cada uno de los agentes de wazuh, podemos consultarlo desde la consola de aenres, haciendo click sobre el agente que vamos a veriricar.
@@ -26,67 +27,42 @@ Este modulo, nos permite consultar todas las fuentes de datos provenientes del a
 
 Y podremos consultar los logs del servidor web para los correspondientes analisis.
 
-Agente_ver_logs_5
 ![Analizar la informacion recibida](https://github.com/hernandopena/Wazuh/blob/304d4c4733cfb9f654778dec54ea7ee69b51a40b/2.%20Instalacion%20Wazuh/imagenes/Agente_ver_logs_5.jpg)
+
 
 ## Como bloquear trafico entrante
 
+Si requerimos realizar bloqueos de trafico a partir  de un analisis de eventos identificados en la ingesta de informacion, podemos realziar la configuracion para que  wazuh bloquee el acceso a esta informacion, a partir de modulo **active-response**, para lo cual requerimos:
+
+En el servidor de wazuh realizar la configuracion en el archivo **/var/ossec/etc/ossec.conf** y agregar las siguientes lineas:
+
+```
+<active-response>
+    <command>firewall-drop</command>
+    <location>local</location>
+    <rules_id>31106</rules_id>
+    <timeout>1800</timeout>
+</active-response>
+```
+
+En donde:
+**<active-response>**: Instruccion para la ejecucion de actividades a partir de una condicion.
+**<command>firewall-drop</command>**: Instruccion para indicar que borre la peticion realizada por un usuario.
+**<location>local</location>**: Realiza la gestion en un agente (endpoint)
+**<rules_id>31106</rules_id>**: Indica sobre cuales acciones se aplicara estas acciones.
+**<timeout>1800</timeout>**: Tiempo en pausa, el cual puede ser usado para el desarrollo de alguna accion.
 
 
+bloqueo__log_1
+
+A continuacion, podemos reiniciar el servidor de wazuh, con los comandos:
+
+```
+systemctl restart wazuh-manager 
+```
+
+Y en este momento, este trafico ya esta bloqueado
 
 
+bloqueo__log_2
  
-
-------------------------------------------------
-
-
-,  Para agregar un agente (Dispositivo, servidor, máquina virtual), se debe de dirigir al menú **Agentes**
-
-
-Al ingresar a este módulo, podremos seleccionar la opción **Deploy a new agent**, como se presenta a continuación
-
-![Opción nuevo Agentes](https://github.com/hernandopena/Wazuh/blob/974cd436841b3a41840e771cb3a3393a4289ad4e/2.%20Instalacion%20Wazuh/imagenes/Opcion_nuevo_agente.jpg)
-
-El cual nos presentara un asistente, mediante el cual podremos establecer las características de este nuevo agente, empezando por el sistema operativo
-
-![Selección Sistema Operativo](https://github.com/hernandopena/Wazuh/blob/7f8ac032d6f7de9d09b21e56101388e88a1cb133/2.%20Instalacion%20Wazuh/imagenes/Nuevo_agente_win_1.jpg)
-
-A continuación, y dependiendo de la opción anteriormente seleccionada, podremos seleccionar la versión del sistema operativo de este agente, en este caso vamos a instalar en un sistema windows 10
-
-![Selección versión del Sistema Operativo](https://github.com/hernandopena/Wazuh/blob/7f8ac032d6f7de9d09b21e56101388e88a1cb133/2.%20Instalacion%20Wazuh/imagenes/Nuevo_agente_win_2.jpg)
-
-A continuación, podremos seleccionar la arquitectura del mismo
-
-![Selección Arquitectura del Sistema Operativo](https://github.com/hernandopena/Wazuh/blob/7f8ac032d6f7de9d09b21e56101388e88a1cb133/2.%20Instalacion%20Wazuh/imagenes/Nuevo_agente_win_3.jpg)
-
-A continuación, en el paso 4, debemos informar, cual es la dirección IP del servidor principal de wazuh o el nodo al que se conectara este agente
-
-![Informacion del Servidor de Wazuh](https://github.com/hernandopena/Wazuh/blob/974cd436841b3a41840e771cb3a3393a4289ad4e/2.%20Instalacion%20Wazuh/imagenes/Nuevo_agente_4.jpg)
-
-En el siguiente paso 5, debemos de informar el nombre del agente y podremos clasificarlo mediante grupos que hayamos definido previamente (si aún no se definen los grupos, estos se pueden generar en el menú de wazuh y asignar posteriormente)
-
-![Nombre del Agente y Grupos](https://github.com/hernandopena/Wazuh/blob/7f8ac032d6f7de9d09b21e56101388e88a1cb133/2.%20Instalacion%20Wazuh/imagenes/Nuevo_agente_win_5.jpg)
-
-A continuación, nos presentara un comando que debemos de copiar y ejecutar en una consola de comandos PowerShell de nuestro agente a registrar con privilegios de administrador, mediante un usuario con privilegios, el ejemplo del comando es:
-
-````
-Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.4.1-1.msi -OutFile ${env:tmp}\wazuh-agent.msi; msiexec.exe /i ${env:tmp}\wazuh-agent.msi /q WAZUH_MANAGER='192.168.1.100' WAZUH_REGISTRATION_SERVER='192.168.1.100' WAZUH_AGENT_GROUP='Windows' WAZUH_AGENT_NAME='ESTACION-01'
-````
-
-![Comando para instalacion](https://github.com/hernandopena/Wazuh/blob/7f8ac032d6f7de9d09b21e56101388e88a1cb133/2.%20Instalacion%20Wazuh/imagenes/Nuevo_agente_win_6.jpg)
-
-Finalmente, si la instalación se ejecutó exitosamente, podremos configurar el servicio para que se inicie cada vez que arranca el sistema, así como iniciar el agente inmediatamente, con la ayuda de los siguientes comandos:
-
-```
-NET START WazuhSvc
-```
-
-![Comando iniciar el agente y configurar su arranque automatico](https://github.com/hernandopena/Wazuh/blob/a1f9b4870ffc4d6ff81a4ab6dcd14e9dd4281ece/2.%20Instalacion%20Wazuh/imagenes/Nuevo_agente_win_7.jpg)
-
-Con lo anterior, ya podremos visualizar en el listado de agentes, que este ya aparece registrado y se encuentra en línea y reportando informacion.
-
-![Verificación de instalación del agente en la plataforma de Wazuh](https://github.com/hernandopena/Wazuh/blob/a1f9b4870ffc4d6ff81a4ab6dcd14e9dd4281ece/2.%20Instalacion%20Wazuh/imagenes/Nuevo_agente_win_8.jpg)
-
-
-
-A partir de este momento, ya podemos comenzar a realizar las configuraciones necesarias y que se ajustes a nuestros sistemas para realizar el correspondiente monitoreo.
