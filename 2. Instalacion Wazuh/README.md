@@ -19,7 +19,7 @@ A continuación, presentamos los requerimientos necesarios para la instalación 
 |-----------|-----------|-----------|-----------|
 | 1-25 | 4 vCPU | 8 GiB | 50 GB |
 | 25-50 | 8 vCPU | 8 GiB | 100 GB |
-| 50-10 | 8 vCPU | 8 GiB | 200 GB |
+| 50-100 | 8 vCPU | 8 GiB | 200 GB |
 
 
 ## Proceso de instalación
