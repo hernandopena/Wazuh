@@ -10,23 +10,24 @@ y Realizar los ajustes en su configuracion, para que realice la ingesta de los L
 
 Para verificar cuales son los origentes de logs que estan siendo entregados por cada uno de los agentes de wazuh, podemos consultarlo desde la consola de aenres, haciendo click sobre el agente que vamos a veriricar.
 
-Agente_ver_logs_1
+![Seleccionar el agente](https://github.com/hernandopena/Wazuh/blob/304d4c4733cfb9f654778dec54ea7ee69b51a40b/2.%20Instalacion%20Wazuh/imagenes/Agente_ver_logs_1.jpg)
 
 Al hacer click sobre el agente, nos desplegara la informacion recolectada y que es procesada de acuerdo a los modulos cargaso o componentes configurados; en esta ventana, vamos a hacer click en la opcion **Configuracion** que se encuentra en la esquina superior derecha.
 
-Agente_ver_logs_2
+![Ir a configuracion](https://github.com/hernandopena/Wazuh/blob/304d4c4733cfb9f654778dec54ea7ee69b51a40b/2.%20Instalacion%20Wazuh/imagenes/Agente_ver_logs_2.jpg)
 
 Ahora nos presentara todas las opciones para realizar configuracion del agente, y nos vamos a dirigir al grupo titulado: **Log data analysis** y entre sus opciones vamos a seleccionar: **Log Collection**.
 
-Agente_ver_logs_3
+![Consultar las fuentes de informacion](https://github.com/hernandopena/Wazuh/blob/304d4c4733cfb9f654778dec54ea7ee69b51a40b/2.%20Instalacion%20Wazuh/imagenes/Agente_ver_logs_3.jpg)
 
 Este modulo, nos permite consultar todas las fuentes de datos provenientes del agente y la ruta desde donde se consultan.
 
-Agente_ver_logs_4
+![Consultar los detalles de las fuentes de informacion](https://github.com/hernandopena/Wazuh/blob/304d4c4733cfb9f654778dec54ea7ee69b51a40b/2.%20Instalacion%20Wazuh/imagenes/Agente_ver_logs_4.jpg)
 
 Y podremos consultar los logs del servidor web para los correspondientes analisis.
 
 Agente_ver_logs_5
+![Analizar la informacion recibida](https://github.com/hernandopena/Wazuh/blob/304d4c4733cfb9f654778dec54ea7ee69b51a40b/2.%20Instalacion%20Wazuh/imagenes/Agente_ver_logs_5.jpg)
 
 ## Como bloquear trafico entrante
 
@@ -41,7 +42,6 @@ Agente_ver_logs_5
 
 ,  Para agregar un agente (Dispositivo, servidor, máquina virtual), se debe de dirigir al menú **Agentes**
 
-![Acceso a menú Agentes](https://github.com/hernandopena/Wazuh/blob/974cd436841b3a41840e771cb3a3393a4289ad4e/2.%20Instalacion%20Wazuh/imagenes/Menu_Agentes.jpg)
 
 Al ingresar a este módulo, podremos seleccionar la opción **Deploy a new agent**, como se presenta a continuación
 
