@@ -36,7 +36,7 @@ A continuación, nos presentara un comando que debemos de copiar y ejecutar en u
 Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.4.1-1.msi -OutFile ${env:tmp}\wazuh-agent.msi; msiexec.exe /i ${env:tmp}\wazuh-agent.msi /q WAZUH_MANAGER='192.168.1.100' WAZUH_REGISTRATION_SERVER='192.168.1.100' WAZUH_AGENT_GROUP='Windows' WAZUH_AGENT_NAME='ESTACION-01'
 ````
 
-![Comando para instalacion](https://github.com/hernandopena/Wazuh/blob/974cd436841b3a41840e771cb3a3393a4289ad4e/2.%20Instalacion%20Wazuh/imagenes/Nuevo_agente_win_6.jpg)
+![Comando para instalacion](https://github.com/hernandopena/Wazuh/blob/7f8ac032d6f7de9d09b21e56101388e88a1cb133/2.%20Instalacion%20Wazuh/imagenes/Nuevo_agente_win_6.jpg)
 
 Finalmente, si la instalación se ejecutó exitosamente, podremos configurar el servicio para que se inicie cada vez que arranca el sistema, así como iniciar el agente inmediatamente, con la ayuda de los siguientes comandos:
 
@@ -44,11 +44,11 @@ Finalmente, si la instalación se ejecutó exitosamente, podremos configurar el 
 NET START WazuhSvc
 ```
 
-![Comando iniciar el agente y configurar su arranque automatico](https://github.com/hernandopena/Wazuh/blob/974cd436841b3a41840e771cb3a3393a4289ad4e/2.%20Instalacion%20Wazuh/imagenes/Nuevo_agente_7.jpg)
+![Comando iniciar el agente y configurar su arranque automatico](https://github.com/hernandopena/Wazuh/blob/a1f9b4870ffc4d6ff81a4ab6dcd14e9dd4281ece/2.%20Instalacion%20Wazuh/imagenes/Nuevo_agente_win_7.jpg)
 
 Con lo anterior, ya podremos visualizar en el listado de agentes, que este ya aparece registrado y se encuentra en línea y reportando informacion.
 
-![Verificación de instalación del agente en la plataforma de Wazuh](https://github.com/hernandopena/Wazuh/blob/974cd436841b3a41840e771cb3a3393a4289ad4e/2.%20Instalacion%20Wazuh/imagenes/Nuevo_agente_8.jpg)
+![Verificación de instalación del agente en la plataforma de Wazuh](https://github.com/hernandopena/Wazuh/blob/a1f9b4870ffc4d6ff81a4ab6dcd14e9dd4281ece/2.%20Instalacion%20Wazuh/imagenes/Nuevo_agente_win_8.jpg)
 
 
 
