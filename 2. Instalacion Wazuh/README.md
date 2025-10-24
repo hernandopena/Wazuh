@@ -29,7 +29,7 @@ Abrir una consola de conexión SSH haciendo uso del programa putty, y establecer
 
 En la línea de comandos vamos a ejecutar el siguiente comando que realizara la descarga del instalador e inmediatamente realizara la instalación del software wazuh:
 
-```sudo curl -sO https://packages.wazuh.com/4.13/wazuh-install.sh && sudo bash ./wazuh-install.sh -a```
+```sudo curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh && sudo bash ./wazuh-install.sh -a```
 
 ![Instalación Wazuh con advertencia](https://github.com/hernandopena/Wazuh/blob/d8ec2a8b8dbb2b61d67ab17713d805c6a96e1cd8/2.%20Instalacion%20Wazuh/imagenes/instalacion_wazuh_advertencia.jpg)
 
@@ -37,7 +37,7 @@ Para el caso del presente laboratorio, nuestra maquina no cuenta con los requeri
 
 Si deseamos continuar con la instalación haciendo caso omiso de la advertencia, basta con agregar el parámetro ```-i``` a la anterior línea, y al ejecutarla iniciara inmediatamente la instalación.
 
-```sudo curl -sO https://packages.wazuh.com/4.13/wazuh-install.sh && sudo bash ./wazuh-install.sh -a -i```
+```sudo curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh && sudo bash ./wazuh-install.sh -a -i```
 
 ![instalación Wazuh](https://github.com/hernandopena/Wazuh/blob/d8ec2a8b8dbb2b61d67ab17713d805c6a96e1cd8/2.%20Instalacion%20Wazuh/imagenes/instalacion_wazuh.jpg)
 
