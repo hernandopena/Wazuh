@@ -27,7 +27,7 @@ Abrir una consola de conexión SSH haciendo uso del programa putty, y establecer
 
 ![Conexión a traves de Putty](https://github.com/hernandopena/Wazuh/blob/f088487f5339447e9d956de680fe8ced8d50eb16/2.%20Instalacion%20Wazuh/imagenes/conexion_putty.jpg)
 
-En la línea de comandos vamos a ejecutar el siguiente comando que realizara la descarga del instalador e inmediatamente realizara la instalación del software wazuh:
+En la línea de comandos vamos a ejecutar el siguiente comando que realizara la descarga del instalador e inmediatamente realizara la instalación del software wazuh :
 
 ```sudo curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh && sudo bash ./wazuh-install.sh -a```
 
