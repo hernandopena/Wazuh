@@ -27,6 +27,9 @@ Abrir una consola de conexión SSH haciendo uso del programa putty, y establecer
 
 ![Conexión a traves de Putty](https://github.com/hernandopena/Wazuh/blob/f088487f5339447e9d956de680fe8ced8d50eb16/2.%20Instalacion%20Wazuh/imagenes/conexion_putty.jpg)
 
+![Conexión a traves de Putty2](imagenes/conexion_putty.jpg)
+
+
 En la línea de comandos vamos a ejecutar el siguiente comando que realizara la descarga del instalador e inmediatamente realizara la instalación del software wazuh :
 
 ```sudo curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh && sudo bash ./wazuh-install.sh -a```
@@ -43,7 +46,7 @@ Si deseamos continuar con la instalación haciendo caso omiso de la advertencia,
 
 El comando anterior se encargará de iniciar la instalación de los componentes necesarios para el funcionamiento de wazuh, y al finalizar la instalación, presentara el nombre de usuario y contraseña para la administración de la plataforma; este proceso puede durar entre 7 y 10 minutos.
 
-Para el caso de este laboratorio el instalador nos presenta que nos ha asignado un usuario y una contraseña como se presentan a continuación:
+Para el caso de este laboratorio el instalador nos presenta que nos ha asignado un usuario y una contraseña similar a como se presentan a continuación:
 
 ```
 User: admin
