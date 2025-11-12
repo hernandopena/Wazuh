@@ -74,18 +74,18 @@ En la interfaz del Dashboard de Wazuh → sección Anomaly Detection (o equiva
 
 Haz clic en Create detector.
 
-Define:
--Nombre del detector y descripción.
--Índice de datos como fuente (por ejemplo: wazuh-alerts-*, wazuh-archives-*, etc.).
--Campo de timestamp (por ejemplo: @timestamp).
--Intervalo del detector (por ejemplo cada 10 minutos) y ventana de retraso (“window delay”) si los datos no son en tiempo real.
+-Define:
+ -Nombre del detector y descripción.
+ -Índice de datos como fuente (por ejemplo: wazuh-alerts-*, wazuh-archives-*, etc.).
+ -Campo de timestamp (por ejemplo: @timestamp).
+ -Intervalo del detector (por ejemplo cada 10 minutos) y ventana de retraso (“window delay”) si los datos no son en tiempo real.
 
-Configura el modelo:
--Agrega features que quieras monitorizar (por ejemplo: número de eventos por agente, número de reglas por tipo, etc.).
--Selecciona el tipo de agregación (count(), average(), etc.).
+-Configura el modelo:
+ -Agrega features que quieras monitorizar (por ejemplo: número de eventos por agente, número de reglas por tipo, etc.).
+ -Selecciona el tipo de agregación (count(), average(), etc.).
 
-Haz clic en Review & Create.
--Si aparece mensaje tipo “Not enough data to train model”, revisa que el índice elegido tenga datos suficientes, que no esté filtrado drásticamente, y que el rango de tiempo usado para el entrenamiento sea adecuado.
+-Haz clic en Review & Create.
+ -Si aparece mensaje tipo “Not enough data to train model”, revisa que el índice elegido tenga datos suficientes, que no esté filtrado drásticamente, y que el rango de tiempo usado para el entrenamiento sea adecuado.
 
 Una vez creado y en estado “running”, el detector generará resultados que puedes revisar (grado, confianza, anomalías detectadas).
 
