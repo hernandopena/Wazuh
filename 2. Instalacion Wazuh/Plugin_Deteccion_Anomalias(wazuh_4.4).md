@@ -11,12 +11,14 @@ Este repositorio contiene la guía paso a paso para instalar y configurar el plu
 ## 🛠️ Pasos de instalación y configuración  
 
 ### 1. Verificar versiones  
-```bash
+```
+bash
 # Comprueba versión de OpenSearch
 curl -XGET https://<tu-host>:9200
 
 # Comprueba versión de OpenSearch Dashboards en el nodo del dashboard
-sudo -u wazuh-dashboard /usr/share/wazuh-dashboard/bin/opensearch-dashboards-plugin list```
+sudo -u wazuh-dashboard /usr/share/wazuh-dashboard/bin/opensearch-dashboards-plugin list
+```
 
 Asegúrate que la versión listada es compatible con el plugin de anomalías.
 
@@ -24,10 +26,14 @@ Asegúrate que la versión listada es compatible con el plugin de anomalías.
 En el nodo donde reside el Wazuh Dashboard (o la instancia de OpenSearch Dashboards):
 
 # Instalar plugin (como usuario root o equivalente)
-```sudo /usr/share/wazuh-dashboard/bin/opensearch-dashboards-plugin install anomalyDetectionDashboards --allow-root```
+```
+sudo /usr/share/wazuh-dashboard/bin/opensearch-dashboards-plugin install anomalyDetectionDashboards --allow-root
+```
 
 # Si ya existe una versión previa o incompatible, primero remover:
-```sudo /usr/share/wazuh-dashboard/bin/opensearch-dashboards-plugin remove anomalyDetectionDashboards --allow-root```
+```
+sudo /usr/share/wazuh-dashboard/bin/opensearch-dashboards-plugin remove anomalyDetectionDashboards --allow-root
+```
 
 # Ajustar los permisos del directorio del plugin
 ```sudo chown -R wazuh-dashboard:wazuh-dashboard /usr/share/wazuh-dashboard/plugins/anomalyDetectionDashboards/
