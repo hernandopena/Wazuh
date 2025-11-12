@@ -36,26 +36,34 @@ sudo /usr/share/wazuh-dashboard/bin/opensearch-dashboards-plugin remove anomalyD
 ```
 
 # Ajustar los permisos del directorio del plugin
-```sudo chown -R wazuh-dashboard:wazuh-dashboard /usr/share/wazuh-dashboard/plugins/anomalyDetectionDashboards/
+```
+sudo chown -R wazuh-dashboard:wazuh-dashboard /usr/share/wazuh-dashboard/plugins/anomalyDetectionDashboards/
 sudo find /usr/share/wazuh-dashboard/plugins/anomalyDetectionDashboards/ -type d -exec chmod 750 {} \;
-sudo find /usr/share/wazuh-dashboard/plugins/anomalyDetectionDashboards/ -type f -exec chmod 640 {} \;```
+sudo find /usr/share/wazuh-dashboard/plugins/anomalyDetectionDashboards/ -type f -exec chmod 640 {} \;
+```
 
 Estos pasos están basados en experiencias de la comunidad que reportaron errores de compatibilidad de versiones.
 
 ### 3. Reiniciar el servicio del Dashboard
 
-```sudo systemctl restart wazuh-dashboard
-# o el servicio equivalente según tu distribución```
+```
+sudo systemctl restart wazuh-dashboard
+# o el servicio equivalente según tu distribución
+```
 
 Verifica los logs (journalctl -u wazuh-dashboard o /var/log/…) para asegurarte de que no hay errores relacionados con la instalación del plugin.
 
 ### 4. Verificar la instalación del plugin
 
-```sudo -u wazuh-dashboard /usr/share/wazuh-dashboard/bin/opensearch-dashboards-plugin list```
+```
+sudo -u wazuh-dashboard /usr/share/wazuh-dashboard/bin/opensearch-dashboards-plugin list
+```
 
 Busca entre los plugins listados algo como:
 
-```anomalyDetectionDashboards@<versión>```
+```
+anomalyDetectionDashboards@<versión>
+```
 
 Esto confirma que el plugin está correctamente instalado.
 
