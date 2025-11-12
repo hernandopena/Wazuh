@@ -16,6 +16,6 @@ Contenido
   - [Monitoreo Servicio Web Apache](https://github.com/hernandopena/Wazuh/blob/8b5a842f93e32905abadc5e62e44f77e542f0382/2.%20Instalacion%20Wazuh/Monitoreo_Servicio_Web_Apache.md)
 
 
-- [3. Habilitacion del Plugin de Deteccion de Anomalias (wazuh 4.4)](Instalacion%20Wazuh/Plugin_Deteccion_Anomalias(wazuh_4.4).md)
+- [3. Habilitacion del Plugin de Deteccion de Anomalias (wazuh 4.4)](2.%20Instalacion%20Wazuh/Plugin_Deteccion_Anomalias(wazuh_4.4).md)
 
 
